@@ -1,0 +1,8 @@
+public ModelAndView orderFeed(WebRequest webRequest) {
+  if ((orderRepository.lastUpdate() != null)
+   && (webRequest.checkNotModified(orderRepository.lastUpdate().getTime()))) {
+   return null;
+  }
+  return new ModelAndView(new OrderAtomFeedView(orderRepository),
+   "orders", orderRepository.findAll());
+}

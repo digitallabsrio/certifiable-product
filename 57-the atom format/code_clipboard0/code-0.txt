@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF 8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Order</title>
+  <link rel="self" href="http://localhost:8080/feed" />
+  <author>
+    <name>Big Money Online Commerce Inc.</name>
+  </author>
+  <subtitle>List of all orders</subtitle>
+  <id>tag:ewolff.com/microservice-atom/order</id>
+  <updated>2017 04 20T15:28:50Z</updated>
+  <entry>
+  ...
+  </entry>
+</feed>

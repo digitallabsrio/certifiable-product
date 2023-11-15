@@ -1,0 +1,12 @@
+@HystrixCommand(
+  fallbackMethod = "getItemsCache",
+  commandProperties = {
+    @HystrixProperty(
+      name = "circuitBreaker.requestVolumeThreshold",
+      value = "2") })
+public Collection<Item> findAll() {
+...
+  this.itemsCache = pagedResources.getContent();
+...
+  return itemsCache;
+}

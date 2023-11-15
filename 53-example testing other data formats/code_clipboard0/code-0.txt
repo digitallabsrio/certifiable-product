@@ -1,0 +1,3 @@
+@ClassRule
+public static KafkaEmbedded embeddedKafka =
+  new KafkaEmbedded(1, true, "order");

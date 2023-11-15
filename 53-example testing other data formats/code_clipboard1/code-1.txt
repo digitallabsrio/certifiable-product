@@ -1,0 +1,5 @@
+@BeforeClass
+public static void setUpBeforeClass() {
+  System.setProperty("spring.kafka.bootstrap-servers",
+   embeddedKafka.getBrokersAsString());
+}

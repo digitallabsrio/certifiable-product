@@ -1,0 +1,13 @@
+public Order order(Order order) {
+  if (order.getNumberOfLines() == 0) {
+    throw new IllegalArgumentException("No order lines!");
+  }
+  order.setUpdated(new Date());
+  Order result = orderRepository.save(order);
+  fireOrderCreatedEvent(order);
+  return result;
+}
+
+private void fireOrderCreatedEvent(Order order) {
+  kafkaTemplate.send("order", order.getId() + "created", order);
+}

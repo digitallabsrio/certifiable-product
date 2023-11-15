@@ -1,0 +1,14 @@
+<html>
+<head>
+  ...
+  <esi:include src="/common/header"></esi:include>
+</head>
+
+<body>
+  <div class="container">
+    <esi:include src="/common/navbar"></esi:include>
+    ...
+  </div>
+  <esi:include src="/common/footer"></esi:include>
+</body>
+</html>

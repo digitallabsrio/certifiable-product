@@ -1,0 +1,6 @@
+@KafkaListener(topics = "order")
+public void order(Invoice invoice, Acknowledgment acknowledgment) {
+  log.info("Received invoice " + invoice.getId());
+  invoiceService.generateInvoice(invoice);
+  acknowledgment.acknowledge();
+}

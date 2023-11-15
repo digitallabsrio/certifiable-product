@@ -1,0 +1,20 @@
+<html>
+<head>
+...
+  <link rel="stylesheet"
+   href="/common/css/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+   href="/common/css/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <a class="brand"
+     href="https://github.com/ultraq/thymeleaf-layout-dialect">
+     Thymeleaf - Layout </a>
+    Mon Sep 18 2017 17:52:01 </div></div>
+    ...
+  </div>
+  <script src="/common/css/bootstrap-3.3.7-dist/js/bootstrap.min.js" />
+</body>
+</html>

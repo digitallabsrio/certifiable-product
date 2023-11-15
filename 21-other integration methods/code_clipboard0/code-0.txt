@@ -1,0 +1,6 @@
+<a href="https:&#x2F;&#x2F;crimson-postbox.herokuapp.com/m50000/messages"
+  class="preview" data-preview="enabled"
+  data-preview-title="Notifications"
+  data-preview-selector="table.messages-overview"
+  data-preview-error-msg="Postbox unreachable!"
+  data-preview-count="tbody>tr" data-preview-window>
